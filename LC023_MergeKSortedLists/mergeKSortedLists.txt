@@ -1,0 +1,14 @@
+1) Merge two sorted lists
+    1 3 5 6 7 8
+    2 3 4 9 11
+    - Take first element of the 2 lists, then compare
+    - Put "1" in new list, take second element in first list
+
+2) Merge K sorted lists
+    - Adopt and adapt solution in 1) by taking first element of all lists
+        - Priority Queue
+        - Heap
+            - Insertion: O(logn)
+            - Removal:   O(logn)
+            - Construction: O(n)
+    - Adopt solution in 1), use divide and conquer to merge the lists 2 by 2
