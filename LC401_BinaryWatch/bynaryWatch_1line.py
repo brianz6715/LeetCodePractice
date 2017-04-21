@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Mon Apr 17 21:40:11 2017
+Created on Fri Apr 21 18:41:15 2017
 
 @author: BrianzChang
 """
@@ -13,12 +13,9 @@ class Solution(object):
         :rtype: List[str]
         """
         
-        result = [];
-        for hr in range(0, 12):
-            for mins in range(0, 60):
-                if (bin(hr)+bin(mins)).count("1") == num:
-                    result.append("%d:%02d"%(hr, mins))
-        return result
+        return ['%d:%02d' % (h, m)
+            for h in range(12) for m in range(60)
+            if (bin(h) + bin(m)).count('1') == num]
         
         
         
