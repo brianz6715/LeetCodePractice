@@ -19,7 +19,6 @@ class Solution(object):
             f *= i
             candidate += str(i)
         
-        print candidate
         s = ''
         tmpRes = k-1
         for j in range(n,0,-1):
