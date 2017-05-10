@@ -11,4 +11,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        length = len(nums)
+        if length == 1:
+            return nums
+        elif length == 2:
+            return max(nums)
         
+        for i in range(length):
+            
