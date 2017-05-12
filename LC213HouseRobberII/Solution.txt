@@ -1,0 +1,20 @@
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+"""
+Created on Fri May 12 18:22:58 2017
+
+@author: BrianzChang
+"""
+
+Now the houses are arranged in a circle, i.e., the last house will be affected by the state of the first house
+
+We know how to solve the problem if the states of last house and first house are independent (House Robber)
+
+Is it possible to divide this problem into sub-problems that satisfy the above requirement?
+
+Example: n = 5
+
+0 X X X X
+1 0 X X 0
+
+Maximum among the answers of the 2 sub-problems are the final answer
